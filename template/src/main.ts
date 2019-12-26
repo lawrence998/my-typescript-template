@@ -4,7 +4,13 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App.vue'
-import './assets/mock'
+
+{{#mockjs}}
+if (process.env.NODE_ENV === 'development') {
+  import ('./assets/mock')
+}
+{{/mockjs}}
+
 
 {{#router}}
 import router from './router'

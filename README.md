@@ -23,7 +23,7 @@ $ vue init lawrence998/my-typescript-template my-project
 The above command pulls the template from here, prompts for some information, and generates the project at `./my-project/`.
 
 ### Demo
-> i wrote a [vue-typescript-demo](https://github.com/SimonZhangITer/vue-typescript-dpapp-demo) project for practice, it recorded how I configured it and how to use vue.js with typescript
+> i wrote a [vue-typescript-demo](http://github.com/lawrence998/my-typescript-template) project for practice, it recorded how I configured it and how to use vue.js with typescript
 
 ### In Addition
 

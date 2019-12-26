@@ -58,6 +58,10 @@ module.exports = {
       type: 'confirm',
       message: 'Install vuex?',
     },
+    mockjs: {
+      type: 'confirm',
+      message: 'Install mockjs?'
+    },
     lint: {
       type: 'confirm',
       message: 'Use ESLint to lint your code?',
@@ -151,6 +155,7 @@ module.exports = {
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
     'src/store/**/*': 'vuex',
+    'src/assets/mock/**/*': 'mockjs'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

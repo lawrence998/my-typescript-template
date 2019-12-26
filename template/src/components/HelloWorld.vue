@@ -23,15 +23,19 @@
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
+{{#mockjs}}
 import {login} from "../service/getData";
+{{/mockjs}}
 
 @Component
 export default class HelloWorld extends Vue {
     msg:string = 'Welcome to Your Vue.js App'
+    {{#mockjs}}
     async mounted() {
       const res = await login();
       console.log('res: ', res);
     }
+    {{/mockjs}}
 }
 </script>
 
