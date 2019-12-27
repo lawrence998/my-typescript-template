@@ -15,3 +15,15 @@ export function getCookie(name: string): string {
     }
     return '';
 };
+
+/**
+ * [setCookie 设置cookie]
+ * @param {[type]} name  [名称]
+ * @param {[type]} value [设置的值]
+ * @param {[type]} days  [日期]
+ */
+export function setCookie(name:string, value:string, days:number):void {
+    var date = new Date();
+    date.setDate(date.getDate() + days);
+    document.cookie = name + '=' + value + ';expires=' + date;
+}
