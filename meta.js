@@ -79,6 +79,10 @@ module.exports = {
       type: 'confirm',
       message: 'Install mockjs?'
     },
+    elementUI: {
+      type: 'confirm',
+      message: 'Install element-ui?'
+    },
     lint: {
       type: 'confirm',
       message: 'Use ESLint to lint your code?',

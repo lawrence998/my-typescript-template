@@ -4,6 +4,10 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App.vue'
+{{#elementUI}}
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+{{/elementUI}}
 
 {{#mockjs}}
 if (process.env.NODE_ENV === 'development') {
@@ -15,6 +19,13 @@ if (process.env.NODE_ENV === 'development') {
 {{#router}}
 import router from './router'
 {{/router}}
+{{#vuex}}
+import store from './store'
+{{/vuex}}
+
+{{#elementUI}}
+Vue.use(ElementUI);
+{{/elementUI}}
 
 Vue.config.productionTip = false
 
@@ -24,6 +35,9 @@ new Vue({
   {{#router}}
   router,
   {{/router}}
+  {{#vuex}}
+  store,
+  {{/vuex}}
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}
