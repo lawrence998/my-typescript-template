@@ -21,12 +21,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 {{#if_eq vuePropertyDecorator "vue-class-component"}}
+import Vue from "vue";
 import Component from "vue-class-component";
 {{/if_eq}}
 {{#if_eq vuePropertyDecorator "vue-property-decorator"}}
-import {Component} from "vue-property-decorator";
+import {Vue, Component} from "vue-property-decorator";
 {{/if_eq}}
 {{#mockjs}}
 import {login} from "../service/getData";
