@@ -11,7 +11,12 @@
 
 <script lang="ts">
 import Vue from "vue";
+{{#if_eq vuePropertyDecorator "vue-class-component"}}
 import Component from "vue-class-component";
+{{/if_eq}}
+{{#if_eq vuePropertyDecorator "vue-property-decorator"}}
+import {Component} from "vue-property-decorator";
+{{/if_eq}}
 {{#unless router}}
 import HelloWorld from './components/HelloWorld.vue'
 {{/unless}}

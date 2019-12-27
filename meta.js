@@ -58,6 +58,23 @@ module.exports = {
       type: 'confirm',
       message: 'Install vuex?',
     },
+    vuePropertyDecorator: {
+      type: 'list',
+      message: 'Install vue-property-decorator or vue-class-component?',
+      choices: [
+        {
+          name: 'Vue-property-decorator (https://github.com/kaorun343/vue-property-decorator)',
+          value: 'vue-property-decorator',
+          short: 'Vue-property-decorator',
+        },
+        {
+          name: 'Vue-class-component (https://github.com/vuejs/vue-class-component)',
+          value: 'vue-class-component',
+          short: 'Vue-class-component',
+        }
+      ],
+      required: true,
+    },
     mockjs: {
       type: 'confirm',
       message: 'Install mockjs?'
