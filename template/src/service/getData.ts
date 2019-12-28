@@ -19,9 +19,8 @@ async function getData(url:string, data:any, type:string, ParameterType?:string,
     };
     otherOptions = {...otherOptions, ...defaultHeader};
   }
-  console.log(otherOptions)
 
-  let response= await fetch(url, data, type, ParameterType, options);
+  let response= await fetch(url, data, type, ParameterType, otherOptions);
 
   if(response.success){
     return response.res.data
