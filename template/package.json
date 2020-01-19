@@ -43,6 +43,11 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-html": "^3.0.0",
+    "eslint-plugin-vue": "^6.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/experimental-utils": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "@typescript-eslint/typescript-estree": "^2.10.0",
     {{#if_eq lintConfig "standard"}}
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-promise": "^3.4.0",
@@ -117,14 +122,21 @@
     "postcss-loader": "^2.0.8",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    {{#stylus}}
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    {{/stylus}}
+    {{#less}}
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "node-less": "^1.0.0",
+    {{/less}}
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "rimraf": "^2.6.0",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "ts-loader": "^3.2.0",
-    "typescript": "^2.6.2",
+    "typescript": "^3.7.3",
     "url-loader": "^0.5.8",
     {{#if_eq vuePropertyDecorator "vue-class-component"}}
     "vue-class-component": "^6.1.2",

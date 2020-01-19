@@ -83,6 +83,14 @@ module.exports = {
       type: 'confirm',
       message: 'Install element-ui?'
     },
+    stylus: {
+      type: 'confirm',
+      message: 'Install stylus?'
+    },
+    less: {
+      type: 'confirm',
+      message: 'Install less?'
+    },
     lint: {
       type: 'confirm',
       message: 'Use ESLint to lint your code?',
