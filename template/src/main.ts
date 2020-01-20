@@ -4,10 +4,23 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App.vue'
+import Component from 'vue-class-component';
 {{#elementUI}}
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 {{/elementUI}}
+{{#router}}
+import router from './router'
+{{/router}}
+{{#vuex}}
+import store from './store'
+{{/vuex}}
+
+Component.registerHooks([
+  'beforeRouteEnter',
+  'beforeRouteLeave',
+  'beforeRouteUpdate',
+]);
 
 {{#mockjs}}
 if (process.env.NODE_ENV === 'development') {
@@ -16,12 +29,7 @@ if (process.env.NODE_ENV === 'development') {
 {{/mockjs}}
 
 
-{{#router}}
-import router from './router'
-{{/router}}
-{{#vuex}}
-import store from './store'
-{{/vuex}}
+
 
 {{#elementUI}}
 Vue.use(ElementUI);
