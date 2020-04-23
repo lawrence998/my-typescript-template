@@ -1,5 +1,5 @@
-import Mock from 'mockjs'
-import list from './list'
+import Mock from 'mockjs';
+import list from './list';
 
 // modules
 Mock
@@ -7,5 +7,5 @@ Mock
     return {
       code: 200,
       result: list
-    }
-  })
+    };
+  });
