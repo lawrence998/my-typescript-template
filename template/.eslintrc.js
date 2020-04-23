@@ -64,7 +64,7 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules
     '@typescript-eslint/semi': ['error'],
     '@typescript-eslint/indent': ['error', 2],
-    '@typescript-eslint/explicit-function-return-type': 0
+    '@typescript-eslint/explicit-function-return-type': 0,
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing
