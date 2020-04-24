@@ -24,7 +24,7 @@ Component.registerHooks([
 
 {{#mockjs}}
 if (process.env.NODE_ENV === 'development') {
-  import ('./assets/mock')
+  require ('./assets/mock')
 }
 {{/mockjs}}
 
